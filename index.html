@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Welcome My Portofolio Webpage</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style type="text/css">
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin:0;
+			line-height: 1.5em;
+		}		
+		h1{
+			font-weight: lighter;
+		}
+		.container{
+			margin:0;
+			background-color: #AAAAAA;
+			background-image: url("image/bg.jpg");
+		}
+		header {
+			width: 100%;
+			height: 50px;
+			background-color: gray;
+			opacity: 0.8;
+		}
+		.content-outer{
+			min-height: 500px;
+		}
+		#main-content{
+			width: 90%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    position: relative;
+		    margin: 90px auto;
+		    text-align: center;
+		}
+		#content2{
+			width: 80%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    position: relative;
+		    margin: 90px auto;
+		    text-align: center;
+		    display: none;
+		}
+		.education{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.experience{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.education table{
+			margin: auto;
+			width: 70%;
+		}
+		.experience table{
+			margin: auto;
+			width: 80%;
+		}
+		#content3{
+			width: 80%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    position: relative;
+		    margin: 90px auto;
+		    text-align: center;
+		    display: none;
+		}
+		#content4{
+			width: 80%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    position: relative;
+		    margin: 90px auto;
+		    text-align: center;
+		    display: none;
+		}
+		#content5{
+			width: 80%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    margin: 90px auto;
+		    text-align: center;
+		    position: relative;
+		    display: none;
+		}
+		footer{
+			width: 100%;
+			height: 50px;
+			background-color: gray;
+		}
+		footer p{
+			text-align: center;
+			padding: 10px;
+		}
+		nav ul{
+			margin: center;
+			float: left;
+		}
+		nav ul li{
+			list-style: none;
+			float: left;
+		}
+		nav ul li a{
+			padding: 16px;
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
+		}
+		nav ul li a:hover{
+			text-decoration: underline;
+		}
+		.desc{
+			padding: 10px 30px 30px 30px;
+			background-color: gray;
+		}
+		.desc img{
+			border-radius: 50%
+		}
+		.personal-info{
+			padding-bottom: 30px;
+		}
+		.personal-info table{
+			margin: auto;
+			width: 600px;
+		}
+		td{
+			text-align: left;
+			vertical-align: top;
+			padding-left: 80px;
+			padding-bottom: 10px;
+		}
+		.social-media{
+			padding-bottom: 30px;
+		}
+		.social-media div img{
+			padding: 10px;
+		}
+		.thumbnail{
+			background-color: white;
+			text-align: center;
+			padding: 10px;
+		}
+		.skills{
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		.ket{
+			font-weight: bold;
+		}
+		.tahun{
+			font-size: 20px;
+			font-weight: lighter;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<ul>
+					<li><a onclick="show('content4')">About Me</a></li>
+					<li><a onclick="show('content2')">Education</a></li>
+					<li><a onclick="show('content3')">Experience</a></li>
+					<li><a onclick="show('content5')">Skills</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="content-outer">
+				<div id ="main-content">
+					<article>
+						<div class="desc">
+							<marquee><h2>
+							My Portofolio Webpage, Service-com.business.site
+							</marquee></h2>
+								<img src="image/fp.png">
+								<h1>Jian Malik Hidayat</h1>
+								<p>Network Engineer</p>
+								<p>Backend Developer</p>
+								<p>My name is Jian Malik Hidayat, I can build networks, analyze networks, and also I understand about database management systems, every day I like to analyze all kinds of things, especially those related to problem solving and problems in the system, I understand database management. I want to be a good learner with my team by working well together, sharing ideas and I like to balance effective new ways.</p>
+						</div>
+					</article>
+					<aside>
+						<div class="personal-info">
+							<h1>Personal Information</h1>
+							<table>
+								<tr>
+									<td class="ket">Birthday</td>
+									<td>29th June</td>
+								</tr>
+								<tr>
+									<td class="ket">Address</td>
+									<td>Baturaja Street Number 15, Prabumulih City, South Sumatera</td>
+								</tr>
+								<tr>
+									<td class="ket">Phone</td>
+									<td>085269574522</td>
+								</tr>
+								<tr>
+									<td class="ket">Email</td>
+									<td>Jianmalikhidayat@gmail.com</td>
+								</tr>
+							</table>
+						</div>
+						<div class="social-media">
+							<h1>Find Me in</h1>	
+								<a href="https://www.linkedin.com/in/jianmalik/"><img src="image/lk.png"></a>
+								<a href="https://github.com/jianmalik/"><img src="image/gh.png"></a>
+								<a href="https://www.instagram.com/jian.malik"><img src="image/ig.png"></a>
+								<a href="https://twitter.com/jianmalikk"><img src="image/tw.png"></a>
+						</div>
+					</aside>
+				</div>
+				
+				<article>
+					<div id="content2">
+						<div class="education">
+							<h1>Education</h1>
+							<table style="padding-top: 20px">
+								<tr class="tahun">
+									<td rowspan="2">2016-2019</td>
+									<td>Sriwijaya State Polytechnic</td>
+								</tr>
+								<tr>
+									<td>Computer Engineering</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<div id="content3">
+						<div class="experience">
+							<h1>Experience</h1>
+							<table style="padding-top: 20px">
+								<tr class="tahun">
+									<td rowspan="2">2015 - Present</td>
+									<td>Service Com</td>
+								</tr>
+								<tr>
+									<td>I am currently entrepreneurship in computer services both hardware and software, This is our website Service-com.business.site</td>
+								</tr>
+								<tr class="tahun">
+									<td rowspan="2">2018</td>
+									<td>Intern IT - Network Engineer</td>
+								</tr>
+								<tr>
+									<td>PT Pertamina MOR II</td>
+								</tr>
+						</table>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<div id="content4">
+						<div class="desc">
+						<marquee><h2>
+						My Portofolio Webpage, Service-com.business.site
+						</marquee></h2>
+							<img src="image/fp.png">
+							<h1>Jian Malik Hidayat</h1>
+							<p>Network Engineer</p>
+							<p>Backend Developer</p>
+							<p>My name is Jian Malik Hidayat, I can build networks, analyze networks, and also I understand about database management systems, every day I like to analyze all kinds of things, especially those related to problem solving and problems in the system, I understand database management. I want to be a good learner with my team by working well together, sharing ideas and I like to balance effective new ways.</p>
+						</div>
+						<div class="personal-info">
+							<h1>Personal Information</h1>
+							<table>
+								<tr>
+									<td class="ket">Birthday</td>
+									<td>29th June</td>
+								</tr>
+								<tr>
+									<td class="ket">Address</td>
+									<td>Baturaja Street Number 15, Prabumulih City, South Sumatera</td>
+								</tr>
+								<tr>
+									<td class="ket">Phone</td>
+									<td>085269574522</td>
+								</tr>
+								<tr>
+									<td class="ket">Email</td>
+									<td>Jianmalikhidayat@gmail.com</td>
+								</tr>
+							</table>
+						</div>
+						<div class="social-media">
+							<h1>Find Me in</h1>	
+							<div>
+								<a href="https://www.linkedin.com/in/jianmalik/"><img src="image/lk.png"></a>
+								<a href="https://github.com/jianmalik/"><img src="image/gh.png"></a>
+								<a href="https://www.instagram.com/jian.malik"><img src="image/ig.png"></a>
+								<a href="https://twitter.com/jianmalikk"><img src="image/tw.png"></a>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<div id="content5">
+						<div class="skills">
+							<h1>Skills</h1>
+							<div class="thumbnail">
+								<img src="image/80.png">
+								<p>Networking</p>
+							</div>
+							<div class="image/thumbnail">
+								<img src="image/70.png">
+								<p>Python, PHP, Mysql, Javascript</p>
+							</div>
+							<div class="image/thumbnail">
+								<img src="image/60.png">
+								<p>Java, React JS, Node JS</p>
+							</div>
+							</div>
+					</div>
+				</article>
+			</div>
+		</main>
+		<footer>
+				<p>&copy; 2020 Jian.Malik</p>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+	function show(param_div_id) {
+    	document.getElementById('main-content').innerHTML = document.getElementById(param_div_id).innerHTML;
+  	}
+</script>
+</html>
